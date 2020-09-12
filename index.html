@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="i'm a web developper"> 
+    <meta name="og:image" content="https://hermannbok.netlify.app/hbcd.jpg">
+    <title> B A B E L </title>
+
+    <!--insertion des styles css-->
+    <link rel="stylesheet" href="style.css">
+    <!--insertion du favicon-->
+    <link rel="shortcut icon" type="image/ico" href="LOGO 3 BAB.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--insertion de la bibliotheque des animations-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--pour appliquer des zoom aux images-->
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+</head>
+
+<body>
+    <!--image et presentation-->
+    <section class="container-fluid presentation">
+        <img src="hbb.jpg" alt="PHOTO DE HERMANN" class="profil_pic">
+        <hr>
+        <div>
+            <h3 class="animate__animated animate__zoomIn">IGORE HERMANN BOKODAHO</h3>
+        </div>
+        <hr><br>
+        <div>
+            <h3>
+                Je suis Hermann, Développeur Web Junior au Ministère du Numérique et de la Digitalisation.
+            </h3><br>
+        </div>
+    </section>
+
+    <!--decouvrir mon pays-->
+    <section class="container-fluid my_country">
+        <h2>
+            Découvrir mon pays le Bénin en images
+        </h2>
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img src="erouge1.jpg" alt="ETOILE ROUGE DE COTONOU" style="width: 400px;">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img src="bioguerra2.jpg" alt="PLACE BIO GUERRA DE PARAKOU">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img src="pdnr2.jpg" alt="LA PORTE DU NON RETOUR DE OUIDAH">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img src="behanzin1.jpg" alt="STATUT DU ROI BEHANZIN A ABOMEY">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img src="dassa1.jpg" alt="COLLINES DE DASSA">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <img src="toffa1er.jpg" alt="PLACE TOFFA 1er DE PORTO-NOVO">
+            </div>
+        </div>
+    </section>
+
+    <!--affichage de l'heure-->
+    <section class="container-fluid clock">
+        <h2 id=clock_inter></h2>
+
+        <script>
+            function horloge() {
+                var time = new Date;
+                var hours = time.getHours();
+                var minutes = time.getMinutes();
+                var seconds = time.getSeconds();
+                var heure_a_afficher = "Actuellement il est " + hours + "h " + minutes + "min " + seconds + "s dans tout le Bénin";
+                document.getElementById("clock_inter").innerHTML = heure_a_afficher;
+            }
+            /*setTimeout("horloge()", 1000);*/
+            setInterval("horloge()", 1000);
+        </script>
+    </section>
+
+    <!--formulaire de contact-->
+    <section class="container-fluid formulaire">
+        <form data-netlify="true" name="form" method="POST">
+            <div class="container">
+                <h2>Contactez-moi</h2>
+                <div class="form-group">
+                    <label for="nom de l'abonné"></label>
+                    <input type="text" placeholder="Name" class="form-control" name="nom">
+                </div>
+                <div class="form-group">
+                    <label for="message de l'abonné"></label>
+                    <input type="text" placeholder="write message" class="form-control" name="message">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block bouton">Envoyer</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!--icone de whatsapp-->
+    <section class="container-fluid icone_social">
+        <i class="fab fa-whatsapp"></i>
+        <i class="fas fa-camera"></i>
+    </section>
+
+
+    <footer>
+    </footer>
+
+    <script>
+        mediumZoom("img")
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
