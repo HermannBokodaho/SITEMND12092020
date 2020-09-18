@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Babel</title>
+    <link rel="stylesheet" href="style_calc.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc-body">
+            <div class="calc-screen">
+                <div class="calc-typed" id="resultat"></div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button c" onclick="presser('')">C</div>
+                <div class="button l" onclick="presser('≠')">≠</div>
+                <div class="button l" onclick="presser('%')">%</div>
+                <div class="button l" onclick="presser('/')">/</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="presser('1')">1</div>
+                <div class="button" onclick="presser('2')">2</div>
+                <div class="button" onclick="presser('3')">3</div>
+                <div class="button l" onclick="presser('*')">x</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="presser('4')">4</div>
+                <div class="button" onclick="presser('5')">5</div>
+                <div class="button" onclick="presser('6')">6</div>
+                <div class="button l" onclick="presser('-')">−</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="presser('7')">7</div>
+                <div class="button" onclick="presser('8')">8</div>
+                <div class="button" onclick="presser('9')">9</div>
+                <div class="button l" onclick="presser('+')">+</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="presser('.')">.</div>
+                <div class="button" onclick="presser('0')"> 0</div>
+                <div class="button">
+                </div>
+                <div class="button l" onclick="calculer()">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="math.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
