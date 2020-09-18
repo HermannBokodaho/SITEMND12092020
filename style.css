@@ -1,0 +1,45 @@
+body{
+    background: rgb(238,174,202);
+background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+}
+
+.card-title{
+    text-align: center;
+}
+.presentation{
+    text-align: center;
+    background-image: url(imgfond.jpg);
+    color: black;
+}
+.profil_pic{
+    width: 15%;
+    border-radius: 100%;
+    padding-top: 2%;
+}
+.calculette{
+    text-align: center;
+    padding: 2% 0% 2% 0%;
+    background: white;                           
+}
+.clock{
+    text-align: center; 
+   /* border: 10px solid green;*/
+    padding: 2% 2% 2% 2%;
+    position: relative;
+}
+.formulaire{
+    text-align: center; 
+    /*border:cyan 10px solid;*/
+    padding: 0% 2% 2% 2%;
+    background: gray;
+}
+.formulaire h2{
+    padding: 2%;
+}
+.icone_social{
+    text-align: right;
+    position: fixed;
+}
